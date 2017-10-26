@@ -3,7 +3,7 @@
 <?php
 include('connect_mysql.php'); // memasukkan script connect_mysql
 //Cek Session
-if(isset($_SESSION['login_user'])){
+if(!isset($_SESSION['login_user'])){
   header("location: dashboard/profile.php");
 }
 ?>
