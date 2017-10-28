@@ -103,6 +103,7 @@ if(isset($_SESSION['login_user'])){
         </div>
       </div>
       <input class="button btn-login" type="submit" name="login" value="login">
+	    <?php echo $error;  /*Koding tampil error*/?>
     </form>
 
   </div>
